@@ -1,0 +1,27 @@
+.custom_radio_input input[type=checkbox]:not(old),
+.custom_radio_input input[type=radio   ]:not(old){
+  width   : 28px;
+  margin  : 0;
+  padding : 0;
+  opacity : 0;
+}
+
+.custom_radio_input input[type=checkbox]:not(old) + label,
+.custom_radio_input input[type=radio   ]:not(old) + label{
+  display:inline-block;
+  border:1px solid #f2671f;
+  border-radius: 3px;
+  width: 100%;
+  text-align: center;
+  color: #f2671f;
+  cursor: pointer;
+}
+
+.custom_radio_input input[type=checkbox]:not(old):checked + label{
+  background-position : 0 -24px;
+}
+
+.custom_radio_input input[type=radio]:not(old):checked + label{
+  background: #f2671f;
+  color: white;
+}
